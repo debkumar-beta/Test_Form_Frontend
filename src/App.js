@@ -22,7 +22,10 @@ function App() {
     };
 
     axios
-      .post("http://localhost:5000/form", form)
+      .post(
+        "https://vercel.com/debs-projects-e6332bcc/test-form-backend/8uk6GF2cMgaQpofsJVPUnHJQSy81",
+        form
+      )
       .then((res) => {
         console.log(res.data);
         toast.success("Form submitted successfully!");
